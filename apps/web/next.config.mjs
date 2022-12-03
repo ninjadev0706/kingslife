@@ -35,14 +35,14 @@ const sentryWebpackPluginOptions =
       //   urlPrefix, include, ignore
       silent: false, // Logging when deploying to check if there is any problem
       validate: true,
-      authToken: process.env.SENTRY_AUTH_TOKEN,
+      authToken: "bd9ae8fa9ed14135a01747670f9071fd7b0e9984b94342c28b62d749e97225d4",
       // For all available options, see:
       // https://github.com/getsentry/sentry-webpack-plugin#options.
     }
     : {
       silent: true, // Suppresses all logs
       dryRun: !process.env.SENTRY_AUTH_TOKEN,
-      authToken: process.env.SENTRY_AUTH_TOKEN,
+      authToken: "bd9ae8fa9ed14135a01747670f9071fd7b0e9984b94342c28b62d749e97225d4",
     }
 
 /** @type {import('next').NextConfig} */
